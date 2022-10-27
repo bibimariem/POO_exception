@@ -53,16 +53,4 @@ class Car extends Vehicle
            
             return true;
          }
-    try {
-         start();
-    } catch (NotificationStartCar $sc) {
-        // Envoyez  une alerte
-        // pour prévenir que le frein à main est actif ;)
-    } finally {
-        // finally permet d'exécuter du code quoi qu'il arrive :)
-        start();
-        // si une exception est jetée par sendEmail,
-        // Le return n'est jamais exécuté
-        return 'Ma voiture roule comme un donut';
-        }
 }
